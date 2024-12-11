@@ -1,0 +1,19 @@
+{%extends 'app1/index.html'%}
+{%block content%}
+<table border="2" width="100%">
+    <tr>
+        <th>rono</th>
+        <th>name</th>
+        <th>subject1</th>
+        <th>Subject2</th>
+    </tr>
+    {% for qs in msg%}
+    <tr>
+        <td>{{qs.rono}}</td>
+        <td>{{qs.name}}</td>
+        <td>{{qs.sub1}}</td>
+        <td>{{qs.sub2}}</td>
+    </tr>
+    {%endfor%}
+</table>
+{%endblock%}

@@ -1,0 +1,15 @@
+{%extends 'app1/index.html'%}
+{%block content%}
+<form action="/delete">
+    <table border="2" width="60%">
+        <tr>
+            <td>Rollno</td>
+            <td><input type="text" name="Rollno"></td>
+        </tr>
+        <tr>
+            <td><input type="submit"></td>
+        </tr>
+    </table>
+</form>
+{{msg}}
+{%endblock%}
